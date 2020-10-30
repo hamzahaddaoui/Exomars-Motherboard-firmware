@@ -1,0 +1,688 @@
+[p LITE_MODE AUTOSTATIC LFSROK ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F2580 ]
+[d frameptr 4065 ]
+"42 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\atan.c
+[v _atan atan `(d  1 e 3 0 ]
+"32 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"492 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\evalpoly.c
+[v _eval_poly eval_poly `(d  1 e 3 0 ]
+"12 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\exp.c
+[v _exp exp `(d  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fabs.c
+[v _fabs fabs `(d  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+[v i2___ftpack __ftpack `(f  1 e 3 0 ]
+"13 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\floor.c
+[v _floor floor `(d  1 e 3 0 ]
+"254 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\frexp.c
+[v _frexp frexp `(d  1 e 3 0 ]
+"277
+[v _ldexp ldexp `(d  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+[v i2___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"27 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"35 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\log.c
+[v _log log `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\pow.c
+[v _pow pow `(d  1 e 3 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"9 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcsqrt.c
+[v _sqrt sqrt `(d  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"1 C:\Users\battaglino.11077\Desktop\Software_SchedaMaster v.2\Bluetooth.c
+[v _bluetoothSetup bluetoothSetup `(v  1 e 0 0 ]
+"28
+[v _bluetoothRX bluetoothRX `(v  1 e 0 0 ]
+"3 C:\Users\battaglino.11077\Desktop\Software_SchedaMaster v.2\CAN.c
+[v _canSetup canSetup `(v  1 e 0 0 ]
+"33
+[v _canConfigMode canConfigMode `(v  1 e 0 0 ]
+"39
+[v _canNormalMode canNormalMode `(v  1 e 0 0 ]
+"50
+[v _canTX canTX `(v  1 e 0 0 ]
+"69
+[v _canRX canRX `(v  1 e 0 0 ]
+"19 C:\Users\battaglino.11077\Desktop\Software_SchedaMaster v.2\schedaMaster.c
+[v _main main `(v  1 e 0 0 ]
+"52
+[v _picSetup picSetup `(v  1 e 0 0 ]
+"59
+[v _my_ISR my_ISR `II(v  1 e 0 0 ]
+"83
+[v _cameraRoutine cameraRoutine `(v  1 e 0 0 ]
+"89
+[v _trapanoRoutine trapanoRoutine `(v  1 e 0 0 ]
+"116
+[v _ruoteRoutine ruoteRoutine `(v  1 e 0 0 ]
+"16255 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f2580.h
+[v _RXF0SIDH RXF0SIDH `VEuc  1 e 1 @3840 ]
+"16387
+[v _RXF0SIDL RXF0SIDL `VEuc  1 e 1 @3841 ]
+"16764
+[v _RXF1SIDH RXF1SIDH `VEuc  1 e 1 @3844 ]
+"16896
+[v _RXF1SIDL RXF1SIDL `VEuc  1 e 1 @3845 ]
+"17405
+[v _RXF2SIDL RXF2SIDL `VEuc  1 e 1 @3849 ]
+"19309
+[v _RXM0SIDH RXM0SIDH `VEuc  1 e 1 @3864 ]
+"19441
+[v _RXM0SIDL RXM0SIDL `VEuc  1 e 1 @3865 ]
+"19941
+[v _RXM1SIDL RXM1SIDL `VEuc  1 e 1 @3869 ]
+"23183
+[v _TXB0SIDH TXB0SIDH `VEuc  1 e 1 @3905 ]
+"23315
+[v _TXB0SIDL TXB0SIDL `VEuc  1 e 1 @3906 ]
+"23683
+[v _TXB0DLC TXB0DLC `VEuc  1 e 1 @3909 ]
+"23771
+[v _TXB0D0 TXB0D0 `VEuc  1 e 1 @3910 ]
+"23832
+[v _TXB0D1 TXB0D1 `VEuc  1 e 1 @3911 ]
+"23893
+[v _TXB0D2 TXB0D2 `VEuc  1 e 1 @3912 ]
+"23954
+[v _TXB0D3 TXB0D3 `VEuc  1 e 1 @3913 ]
+"24015
+[v _TXB0D4 TXB0D4 `VEuc  1 e 1 @3914 ]
+"24076
+[v _TXB0D5 TXB0D5 `VEuc  1 e 1 @3915 ]
+"24137
+[v _TXB0D6 TXB0D6 `VEuc  1 e 1 @3916 ]
+"24198
+[v _TXB0D7 TXB0D7 `VEuc  1 e 1 @3917 ]
+"25925
+[v _RXB0CON RXB0CON `VEuc  1 e 1 @3936 ]
+"26140
+[v _RXB0SIDH RXB0SIDH `VEuc  1 e 1 @3937 ]
+"26272
+[v _RXB0SIDL RXB0SIDL `VEuc  1 e 1 @3938 ]
+"26654
+[v _RXB0DLC RXB0DLC `VEuc  1 e 1 @3941 ]
+"26786
+[v _RXB0D0 RXB0D0 `VEuc  1 e 1 @3942 ]
+"26847
+[v _RXB0D1 RXB0D1 `VEuc  1 e 1 @3943 ]
+"26908
+[v _RXB0D2 RXB0D2 `VEuc  1 e 1 @3944 ]
+"26969
+[v _RXB0D3 RXB0D3 `VEuc  1 e 1 @3945 ]
+"27030
+[v _RXB0D4 RXB0D4 `VEuc  1 e 1 @3946 ]
+"27091
+[v _RXB0D5 RXB0D5 `VEuc  1 e 1 @3947 ]
+"27152
+[v _RXB0D6 RXB0D6 `VEuc  1 e 1 @3948 ]
+"27213
+[v _RXB0D7 RXB0D7 `VEuc  1 e 1 @3949 ]
+"27274
+[v _CANSTAT CANSTAT `VEuc  1 e 1 @3950 ]
+"27382
+[v _CANCON CANCON `VEuc  1 e 1 @3951 ]
+"27485
+[v _BRGCON1 BRGCON1 `VEuc  1 e 1 @3952 ]
+"27546
+[v _BRGCON2 BRGCON2 `VEuc  1 e 1 @3953 ]
+"27616
+[v _BRGCON3 BRGCON3 `VEuc  1 e 1 @3954 ]
+"27660
+[v _CIOCON CIOCON `VEuc  1 e 1 @3955 ]
+"29408
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"29629
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"30702
+[v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
+"30911
+[v _TXSTA TXSTA `VEuc  1 e 1 @4012 ]
+"31208
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"31219
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"31230
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"31241
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @4016 ]
+"31729
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"33111
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+"35521
+[v _BRG16 BRG16 `VEb  1 e 0 @32195 ]
+"35523
+[v _BRGH BRGH `VEb  1 e 0 @32098 ]
+"35935
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"36267
+[v _PEIE PEIE `VEb  1 e 0 @32662 ]
+"36365
+[v _RCIE RCIE `VEb  1 e 0 @31981 ]
+"36367
+[v _RCIF RCIF `VEb  1 e 0 @31989 ]
+"36613
+[v _RXB0FUL RXB0FUL `VEb  1 e 0 @31495 ]
+"36615
+[v _RXB0IE RXB0IE `VEb  1 e 0 @32024 ]
+"36617
+[v _RXB0IF RXB0IF `VEb  1 e 0 @32032 ]
+"38093
+[v _SPEN SPEN `VEb  1 e 0 @32095 ]
+"38549
+[v _TXB0REQ TXB0REQ `VEb  1 e 0 @31235 ]
+"39033
+[v _TXEN TXEN `VEb  1 e 0 @32101 ]
+"39039
+[v _TXIF TXIF `VEb  1 e 0 @31988 ]
+"3 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\errno.c
+[v _errno errno `i  1 e 2 0 ]
+"1 C:\Users\battaglino.11077\Desktop\Software_SchedaMaster v.2\schedaMaster.h
+[v _pigreco pigreco `Cf  1 e 3 0 ]
+"2
+[v _gradiBit gradiBit `Cf  1 e 3 0 ]
+"3
+[v _RADtoDEG RADtoDEG `Cf  1 e 3 0 ]
+"5
+[v _maxVel maxVel `Cf  1 e 3 0 ]
+"6
+[v _L L `Cf  1 e 3 0 ]
+"7
+[v _D1 D1 `Cf  1 e 3 0 ]
+"8
+[v _D2 D2 `Cf  1 e 3 0 ]
+"143
+[v _mov1_online mov1_online `b  1 e 0 0 ]
+"144
+[v _mov2_online mov2_online `b  1 e 0 0 ]
+"145
+[v _mov3_online mov3_online `b  1 e 0 0 ]
+"146
+[v _mov4_online mov4_online `b  1 e 0 0 ]
+"147
+[v _mov5_online mov5_online `b  1 e 0 0 ]
+"148
+[v _mov6_online mov6_online `b  1 e 0 0 ]
+"150
+[v _rot1_online rot1_online `b  1 e 0 0 ]
+"151
+[v _rot3_online rot3_online `b  1 e 0 0 ]
+"152
+[v _rot4_online rot4_online `b  1 e 0 0 ]
+"153
+[v _rot6_online rot6_online `b  1 e 0 0 ]
+"155
+[v _trapano_online trapano_online `b  1 e 0 0 ]
+"157
+[v _camera_online camera_online `b  1 e 0 0 ]
+"159
+[v _sensori_online sensori_online `b  1 e 0 0 ]
+"161
+[v _alimentazione_online alimentazione_online `b  1 e 0 0 ]
+"163
+[v _cassetto_online cassetto_online `b  1 e 0 0 ]
+"167
+[v _ruoteData_NEW ruoteData_NEW `b  1 e 0 0 ]
+"168
+[v _cameraData_NEW cameraData_NEW `b  1 e 0 0 ]
+"169
+[v _trapanoData_NEW trapanoData_NEW `b  1 e 0 0 ]
+"170
+[v _serialData_NEW serialData_NEW `b  1 e 0 0 ]
+"172
+[v _posizioneMov1 posizioneMov1 `b  1 e 0 0 ]
+"173
+[v _posizioneMov2 posizioneMov2 `b  1 e 0 0 ]
+"174
+[v _posizioneMov3 posizioneMov3 `b  1 e 0 0 ]
+"175
+[v _posizioneMov4 posizioneMov4 `b  1 e 0 0 ]
+"176
+[v _posizioneMov5 posizioneMov5 `b  1 e 0 0 ]
+"177
+[v _posizioneMov6 posizioneMov6 `b  1 e 0 0 ]
+"179
+[v _posizioneRot1 posizioneRot1 `b  1 e 0 0 ]
+"180
+[v _posizioneRot3 posizioneRot3 `b  1 e 0 0 ]
+"181
+[v _posizioneRot4 posizioneRot4 `b  1 e 0 0 ]
+"182
+[v _posizioneRot6 posizioneRot6 `b  1 e 0 0 ]
+"184
+[v _posizioneCameraX posizioneCameraX `b  1 e 0 0 ]
+"185
+[v _posizioneCameraY posizioneCameraY `b  1 e 0 0 ]
+"187
+[v _posizioneTrapano posizioneTrapano `b  1 e 0 0 ]
+"189
+[v _posizioneCassetto posizioneCassetto `b  1 e 0 0 ]
+"194
+[v _i i `uc  1 e 1 0 ]
+"195
+[v _k k `uc  1 e 1 0 ]
+"199
+[v _bufferDataRX bufferDataRX `[19]uc  1 e 19 0 ]
+"201
+[v _console_raggioRuote console_raggioRuote `i  1 e 2 0 ]
+"202
+[v _console_distanzaRuote console_distanzaRuote `i  1 e 2 0 ]
+"203
+[v _console_velocitaRuote console_velocitaRuote `i  1 e 2 0 ]
+"205
+[v _console_rotazioneCamera console_rotazioneCamera `uc  1 e 1 0 ]
+"206
+[v _console_inclinazioneCamera console_inclinazioneCamera `uc  1 e 1 0 ]
+"208
+[v _console_posizioneTrapano console_posizioneTrapano `uc  1 e 1 0 ]
+"209
+[v _console_puntaTrapano console_puntaTrapano `uc  1 e 1 0 ]
+"210
+[v _console_rotazioneTrapano console_rotazioneTrapano `uc  1 e 1 0 ]
+"212
+[v _console_cassetto console_cassetto `uc  1 e 1 0 ]
+[s S21 ricezRuote 7 `ui 1 velocitaAttuale 2 0 `ui 1 distanzaAttuale 2 2 `ui 1 pwmAttuale 2 4 `uc 1 angoloAttuale 1 6 ]
+"221
+[v _periferiche_Ruote periferiche_Ruote `[6]S21  1 e 42 0 ]
+"223
+[v _periferiche_CameraXY periferiche_CameraXY `[2]uc  1 e 2 0 ]
+"224
+[v _periferiche_Trapano periferiche_Trapano `uc  1 e 1 0 ]
+"225
+[v _periferiche_Cassetto periferiche_Cassetto `uc  1 e 1 0 ]
+"226
+[v _periferiche_statoBatterie periferiche_statoBatterie `uc  1 e 1 0 ]
+[s S26 invioRuote 10 `d 1 velocita 3 0 `d 1 distanza 3 3 `uc 1 direzione 1 6 `d 1 angolo 3 7 ]
+"236
+[v _ruote ruote `[6]S26  1 e 60 0 ]
+"238
+[v _cameraXY cameraXY `[2]uc  1 e 2 0 ]
+"239
+[v _trapano trapano `uc  1 e 1 0 ]
+"240
+[v _cassetto cassetto `uc  1 e 1 0 ]
+"19 C:\Users\battaglino.11077\Desktop\Software_SchedaMaster v.2\schedaMaster.c
+[v _main main `(v  1 e 0 0 ]
+{
+"50
+} 0
+"89
+[v _trapanoRoutine trapanoRoutine `(v  1 e 0 0 ]
+{
+"112
+} 0
+"116
+[v _ruoteRoutine ruoteRoutine `(v  1 e 0 0 ]
+{
+"117
+[v ruoteRoutine@dICR_R dICR_R `[6]f  1 a 18 36 ]
+"119
+[v ruoteRoutine@massimaDistanza massimaDistanza `f  1 a 3 54 ]
+"118
+[v ruoteRoutine@velocitaMovimento velocitaMovimento `f  1 a 3 30 ]
+"235
+} 0
+"9 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcsqrt.c
+[v _sqrt sqrt `(d  1 e 3 0 ]
+{
+"134
+[v sqrt@x x `d  1 a 3 116 ]
+[v sqrt@q q `d  1 a 3 113 ]
+[v sqrt@z z `d  1 a 3 109 ]
+[v sqrt@og og `d  1 a 3 106 ]
+"135
+[v sqrt@i i `uc  1 a 1 112 ]
+"9
+[v sqrt@a a `d  1 p 3 100 ]
+"159
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\pow.c
+[v _pow pow `(d  1 e 3 0 ]
+{
+"8
+[v pow@yi yi `ul  1 a 4 96 ]
+"7
+[v pow@sign sign `uc  1 a 1 95 ]
+"5
+[v pow@x x `d  1 p 3 83 ]
+[v pow@y y `d  1 p 3 86 ]
+"31
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\log.c
+[v _log log `(d  1 e 3 0 ]
+{
+"7
+[v log@exponent exponent `i  1 a 2 69 ]
+"5
+[v log@x x `d  1 p 3 66 ]
+"9
+[v log@coeff coeff `C[9]d  1 s 27 coeff ]
+"36
+} 0
+"12 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\exp.c
+[v _exp exp `(d  1 e 3 0 ]
+{
+"14
+[v exp@exponent exponent `i  1 a 2 80 ]
+"15
+[v exp@sign sign `uc  1 a 1 82 ]
+"12
+[v exp@x x `d  1 p 3 74 ]
+"17
+[v exp@coeff coeff `C[10]d  1 s 30 coeff ]
+"57
+} 0
+"277 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\frexp.c
+[v _ldexp ldexp `(d  1 e 3 0 ]
+{
+[v ldexp@value value `d  1 p 3 66 ]
+[v ldexp@newexp newexp `i  1 p 2 69 ]
+"307
+} 0
+"13 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\floor.c
+[v _floor floor `(d  1 e 3 0 ]
+{
+"15
+[v floor@i i `d  1 a 3 69 ]
+"16
+[v floor@expon expon `i  1 a 2 72 ]
+"13
+[v floor@x x `d  1 p 3 66 ]
+"30
+} 0
+"254 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\frexp.c
+[v _frexp frexp `(d  1 e 3 0 ]
+{
+[v frexp@value value `d  1 p 3 0 ]
+[v frexp@eptr eptr `*.39i  1 p 2 3 ]
+"274
+} 0
+"44 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 10 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 14 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 9 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 0 ]
+"73
+} 0
+"42 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+{
+"44
+[v ___altoft@sign sign `uc  1 a 1 24 ]
+[v ___altoft@exp exp `uc  1 a 1 23 ]
+"42
+[v ___altoft@c c `l  1 p 4 15 ]
+"57
+} 0
+"20 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+{
+[v ___ftsub@f1 f1 `f  1 p 3 54 ]
+[v ___ftsub@f2 f2 `f  1 p 3 57 ]
+"27
+} 0
+"32 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 11 ]
+"32
+[v ___awtoft@c c `i  1 p 2 8 ]
+"42
+} 0
+"35 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+{
+"37
+[v ___lltoft@exp exp `uc  1 a 1 16 ]
+"35
+[v ___lltoft@c c `ul  1 p 4 8 ]
+"46
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\atan.c
+[v _atan atan `(d  1 e 3 0 ]
+{
+"28
+[v atan@val val `d  1 a 3 79 ]
+[v atan@val_squared val_squared `d  1 a 3 76 ]
+[v atan@x x `d  1 a 3 72 ]
+[v atan@y y `d  1 a 3 69 ]
+"27
+[v atan@recip recip `uc  1 a 1 75 ]
+"8
+[v atan@f f `d  1 p 3 66 ]
+"10
+[v atan@coeff_a coeff_a `C[6]d  1 s 18 coeff_a ]
+"19
+[v atan@coeff_b coeff_b `C[5]d  1 s 15 coeff_b ]
+"41
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fabs.c
+[v _fabs fabs `(d  1 e 3 0 ]
+{
+[v fabs@d d `d  1 p 3 57 ]
+"9
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+{
+[v ___ftneg@f1 f1 `f  1 p 3 54 ]
+"20
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\evalpoly.c
+[v _eval_poly eval_poly `(d  1 e 3 0 ]
+{
+"6
+[v eval_poly@res res `d  1 a 3 63 ]
+"4
+[v eval_poly@x x `d  1 p 3 54 ]
+[v eval_poly@d d `*.25Cd  1 p 2 57 ]
+[v eval_poly@n n `i  1 p 2 59 ]
+"12
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 22 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 26 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 25 ]
+[v ___ftmul@exp exp `uc  1 a 1 21 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 12 ]
+[v ___ftmul@f2 f2 `f  1 p 3 15 ]
+"157
+} 0
+"86 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 53 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 52 ]
+[v ___ftadd@sign sign `uc  1 a 1 51 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 42 ]
+[v ___ftadd@f2 f2 `f  1 p 3 45 ]
+"148
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+{
+[v ___ftge@ff1 ff1 `f  1 p 3 57 ]
+[v ___ftge@ff2 ff2 `f  1 p 3 60 ]
+"13
+} 0
+"54 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 37 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 41 ]
+[v ___ftdiv@exp exp `uc  1 a 1 40 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 36 ]
+"54
+[v ___ftdiv@f1 f1 `f  1 p 3 27 ]
+[v ___ftdiv@f2 f2 `f  1 p 3 30 ]
+"86
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
+"52 C:\Users\battaglino.11077\Desktop\Software_SchedaMaster v.2\schedaMaster.c
+[v _picSetup picSetup `(v  1 e 0 0 ]
+{
+"57
+} 0
+"3 C:\Users\battaglino.11077\Desktop\Software_SchedaMaster v.2\CAN.c
+[v _canSetup canSetup `(v  1 e 0 0 ]
+{
+"31
+} 0
+"39
+[v _canNormalMode canNormalMode `(v  1 e 0 0 ]
+{
+"43
+} 0
+"33
+[v _canConfigMode canConfigMode `(v  1 e 0 0 ]
+{
+"37
+} 0
+"83 C:\Users\battaglino.11077\Desktop\Software_SchedaMaster v.2\schedaMaster.c
+[v _cameraRoutine cameraRoutine `(v  1 e 0 0 ]
+{
+"87
+} 0
+"50 C:\Users\battaglino.11077\Desktop\Software_SchedaMaster v.2\CAN.c
+[v _canTX canTX `(v  1 e 0 0 ]
+{
+"53
+[v canTX@ap ap `[1]*.39v  1 a 2 31 ]
+"50
+[v canTX@nData nData `i  1 p 2 15 ]
+"67
+} 0
+"1 C:\Users\battaglino.11077\Desktop\Software_SchedaMaster v.2\Bluetooth.c
+[v _bluetoothSetup bluetoothSetup `(v  1 e 0 0 ]
+{
+"11
+} 0
+"28
+[v _bluetoothRX bluetoothRX `(v  1 e 0 0 ]
+{
+"29
+[v bluetoothRX@RXdato1 RXdato1 `uc  1 a 1 4 ]
+[v bluetoothRX@RXdato2 RXdato2 `uc  1 a 1 3 ]
+[v bluetoothRX@RXdato3 RXdato3 `uc  1 a 1 2 ]
+"31
+[v bluetoothRX@n n `uc  1 a 1 1 ]
+"87
+} 0
+"59 C:\Users\battaglino.11077\Desktop\Software_SchedaMaster v.2\schedaMaster.c
+[v _my_ISR my_ISR `II(v  1 e 0 0 ]
+{
+"81
+} 0
+"69 C:\Users\battaglino.11077\Desktop\Software_SchedaMaster v.2\CAN.c
+[v _canRX canRX `(v  1 e 0 0 ]
+{
+[v canRX@canRX canRX `[8]uc  1 a 8 24 ]
+"70
+[v canRX@DLC DLC `uc  1 a 1 32 ]
+[v canRX@ID ID `uc  1 a 1 23 ]
+"327
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftge.c
+[v i2___ftge __ftge `(b  1 e 0 0 ]
+{
+[v i2___ftge@ff1 ff1 `f  1 p 3 12 ]
+[v i2___ftge@ff2 ff2 `f  1 p 3 15 ]
+"13
+} 0
+"28 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+{
+[v ___lwtoft@c c `ui  1 p 2 8 ]
+"31
+} 0
+"27 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+{
+[v ___lbtoft@c c `uc  1 a 1 wreg ]
+[v ___lbtoft@c c `uc  1 a 1 wreg ]
+"29
+[v ___lbtoft@c c `uc  1 a 1 11 ]
+"30
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+[v i2___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v i2___ftpack@arg arg `um  1 p 3 0 ]
+[v i2___ftpack@exp exp `uc  1 p 1 3 ]
+[v i2___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0

@@ -1,0 +1,341 @@
+
+# 1 "D:\Documenti\Scuola\BERGAMOSCIENZA 2016\Progetto EXOMARS\Master Software (Haddaoui)\Software_SchedaMaster v.2\CAN.c"
+
+# 7 "C:\Program Files (x86)\Microchip\xc8\v1.36\include\stdarg.h"
+typedef void * va_list[1];
+
+#pragma intrinsic(__va_start)
+extern void * __va_start(void);
+
+#pragma intrinsic(__va_arg)
+extern void * __va_arg(void *, ...);
+
+# 4 "D:\Documenti\Scuola\BERGAMOSCIENZA 2016\Progetto EXOMARS\Master Software (Haddaoui)\Software_SchedaMaster v.2\CAN.c"
+unsigned char canRXB0[8];
+unsigned char DLCRX0;
+unsigned char IDH0;
+
+void canSetup(void){
+canConfigMode();
+
+BRGCON1=0b00000011;
+BRGCON2=0b10011000;
+BRGCON3=0b00000011;
+
+
+
+RXM0SIDL=0;
+RXM1SIDL=0;
+RXB0SIDL=0;
+RXF0SIDL=0;
+RXF1SIDL=0;
+RXF2SIDL=0;
+TXB0SIDL=0;
+
+
+RXM0SIDH=0B11111111;
+RXF0SIDH=0x40;
+RXF1SIDH=0x00;
+
+
+RXB0CON=0b00100110;
+
+CIOCON=0b00100000;
+RXB0IE = 1;
+canNormalMode();
+}
+
+void canConfigMode(void){
+CANCON = 0b10010000;
+while((CANSTAT & 0b11100000) != 0b10000000);
+
+}
+
+void canNormalMode(void){
+CANCON = 0b00010000;
+while((CANSTAT & 0b11100000) != 0b00000000);
+
+}
+
+void canLoopbackMode(void){
+CANCON = 0b01010000;
+while((CANSTAT & 0b11100000) != 0b01000000);
+
+}
+void canTX(int nData, ...){
+nData++;
+while(B0TXREQ);
+va_list ap;
+*ap = __va_start();
+TXB0DLC = nData - 1;
+TXB0SIDH = (*(int *)__va_arg((*(int **)ap), (int)0));
+TXB0D0 = (*(int *)__va_arg((*(int **)ap), (int)0));
+TXB0D1 = (*(int *)__va_arg((*(int **)ap), (int)0));
+TXB0D2 = (*(int *)__va_arg((*(int **)ap), (int)0));
+TXB0D3 = (*(int *)__va_arg((*(int **)ap), (int)0));
+TXB0D4 = (*(int *)__va_arg((*(int **)ap), (int)0));
+TXB0D5 = (*(int *)__va_arg((*(int **)ap), (int)0));
+TXB0D6 = (*(int *)__va_arg((*(int **)ap), (int)0));
+TXB0D7 = (*(int *)__va_arg((*(int **)ap), (int)0));
+;
+B0TXREQ=1;
+}
+
+void canRX(void){
+unsigned char canRX[8], ID, DLC;
+canRX[0] = RXB0D0;
+canRX[1] = RXB0D1;
+canRX[2] = RXB0D2;
+canRX[3] = RXB0D3;
+canRX[4] = RXB0D4;
+canRX[5] = RXB0D5;
+canRX[6] = RXB0D6;
+canRX[7] = RXB0D7;
+DLC = RXB0DLC;
+
+for (i=DLC;i<8;i++){
+canRX[i] = 0;
+}
+ID=RXB0SIDH;
+
+RXB0FUL=0;
+RXB0IF=0;
+switch(ID){
+
+case canERROR_mov1:
+break;
+case canERROR_mov2:
+break;
+case canERROR_mov3:
+break;
+case canERROR_mov4:
+break;
+case canERROR_mov5:
+break;
+case canERROR_mov6:
+break;
+case canERROR_rot1:
+break;
+case canERROR_rot3:
+break;
+case canERROR_rot4:
+break;
+case canERROR_rot6:
+break;
+case canERROR_trapano:
+break;
+case canERROR_camera:
+break;
+case canERROR_sensori:
+break;
+case canERROR_alimentazione:
+break;
+case canERROR_cassetto:
+break;
+
+
+case canRX_mov1:
+mov1_online = 1;
+if (DLC == 0){
+return;
+}
+periferiche_Ruote[0].velocitaAttuale = canRX[1] + (canRX[2] << 8);
+periferiche_Ruote[0].distanzaAttuale = canRX[3] + (canRX[4] << 8);
+periferiche_Ruote[0].pwmAttuale = canRX[5] + (canRX[6] << 8);
+if (ruote[0].distanza <= periferiche_Ruote[0].distanzaAttuale){
+posizioneMov1 = 1;
+}
+else{
+posizioneMov1 = 0;
+}
+break;
+case canRX_mov2:
+mov2_online = 1;
+if (DLC == 0){
+return;
+}
+periferiche_Ruote[0].velocitaAttuale = canRX[1] + (canRX[2] << 8);
+periferiche_Ruote[0].distanzaAttuale = canRX[3] + (canRX[4] << 8);
+periferiche_Ruote[0].pwmAttuale = canRX[5] + (canRX[6] << 8);
+if (ruote[1].distanza <= periferiche_Ruote[1].distanzaAttuale){
+posizioneMov2 = 1;
+}
+else{
+posizioneMov2 = 0;
+}
+break;
+case canRX_mov3:
+mov3_online = 1;
+if (DLC == 0){
+return;
+}
+periferiche_Ruote[0].velocitaAttuale = canRX[1] + (canRX[2] << 8);
+periferiche_Ruote[0].distanzaAttuale = canRX[3] + (canRX[4] << 8);
+periferiche_Ruote[0].pwmAttuale = canRX[5] + (canRX[6] << 8);
+if (ruote[2].distanza <= periferiche_Ruote[2].distanzaAttuale){
+posizioneMov3 = 1;
+}
+else{
+posizioneMov3 = 0;
+}
+break;
+case canRX_mov4:
+mov4_online = 1;
+if (DLC == 0){
+return;
+}
+periferiche_Ruote[0].velocitaAttuale = canRX[1] + (canRX[2] << 8);
+periferiche_Ruote[0].distanzaAttuale = canRX[3] + (canRX[4] << 8);
+periferiche_Ruote[0].pwmAttuale = canRX[5] + (canRX[6] << 8);
+if (ruote[3].distanza <= periferiche_Ruote[3].distanzaAttuale){
+posizioneMov4 = 1;
+}
+else{
+posizioneMov4 = 0;
+}
+break;
+case canRX_mov5:
+mov5_online = 1;
+if (DLC == 0){
+return;
+}
+periferiche_Ruote[0].velocitaAttuale = canRX[1] + (canRX[2] << 8);
+periferiche_Ruote[0].distanzaAttuale = canRX[3] + (canRX[4] << 8);
+periferiche_Ruote[0].pwmAttuale = canRX[5] + (canRX[6] << 8);
+if (ruote[4].distanza <= periferiche_Ruote[4].distanzaAttuale){
+posizioneMov5 = 1;
+}
+else{
+posizioneMov5 = 0;
+}
+break;
+case canRX_mov6:
+mov6_online = 1;
+if (DLC == 0){
+return;
+}
+periferiche_Ruote[0].velocitaAttuale = canRX[1] + (canRX[2] << 8);
+periferiche_Ruote[0].distanzaAttuale = canRX[3] + (canRX[4] << 8);
+periferiche_Ruote[0].pwmAttuale = canRX[5] + (canRX[6] << 8);
+if (ruote[5].distanza <= periferiche_Ruote[5].distanzaAttuale){
+posizioneMov6 = 1;
+}
+else{
+posizioneMov6 = 0;
+}
+break;
+case canRX_rot1:
+rot1_online = 1;
+if (DLC == 0){
+return;
+}
+periferiche_Ruote[0].angoloAttuale = canRX[0];
+if (ruote[0].angolo <= periferiche_Ruote[0].angoloAttuale){
+posizioneRot1 = 1;
+}
+else{
+posizioneRot1 = 0;
+}
+break;
+case canRX_rot3:
+rot3_online = 1;
+if (DLC == 0){
+return;
+}
+periferiche_Ruote[2].angoloAttuale = canRX[0];
+if (ruote[2].angolo <= periferiche_Ruote[2].angoloAttuale){
+posizioneRot3 = 1;
+}
+else{
+posizioneRot3 = 0;
+}
+break;
+case canRX_rot4:
+rot4_online = 1;
+if (DLC == 0){
+return;
+}
+periferiche_Ruote[3].angoloAttuale = canRX[0];
+if (ruote[3].angolo <= periferiche_Ruote[3].angoloAttuale){
+posizioneRot4 = 1;
+}
+else{
+posizioneRot4 = 0;
+}
+break;
+case canRX_rot6:
+rot6_online = 1;
+if (DLC == 0){
+return;
+}
+periferiche_Ruote[5].angoloAttuale = canRX[0];
+if (ruote[5].angolo <= periferiche_Ruote[5].angoloAttuale){
+posizioneRot6 = 1;
+}
+else{
+posizioneRot6 = 0;
+}
+break;
+case canRX_trapano:
+trapano_online = 1;
+if (DLC == 0){
+return;
+}
+periferiche_Trapano = canRX[0];
+if (trapano == periferiche_Trapano){
+posizioneTrapano = 1;
+}
+else{
+posizioneTrapano = 0;
+}
+break;
+case canRX_camera:
+camera_online = 1;
+if (DLC == 0){
+return;
+}
+periferiche_CameraXY[0] = canRX[0];
+periferiche_CameraXY[1] = canRX[1];
+if (cameraXY[0] == periferiche_CameraXY[0]){
+posizioneCameraX = 1;
+}
+else{
+posizioneCameraX = 0;
+}
+if (cameraXY[1] == periferiche_CameraXY[1]){
+posizioneCameraY = 1;
+}
+else{
+posizioneCameraY = 0;
+}
+break;
+case canRX_sensori:
+sensori_online = 1;
+if (DLC == 0){
+return;
+}
+break;
+case canRX_alimentazione:
+alimentazione_online = 1;
+if (DLC == 0){
+return;
+}
+periferiche_statoBatterie = canRX[0];
+break;
+case canRX_cassetto:
+cassetto_online = 1;
+if (DLC == 0){
+return;
+}
+periferiche_Cassetto = canRX[0];
+if (cassetto == periferiche_Cassetto){
+posizioneCassetto = 1;
+}
+else{
+posizioneCassetto = 0;
+}
+break;
+default :
+break;
+}
+}
